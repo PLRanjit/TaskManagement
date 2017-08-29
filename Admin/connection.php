@@ -3,7 +3,7 @@
 			$_dbHost = "localhost";
 			$_dbUser = "root";
 			$_dbPass = "";
-			$_dbName = "greycellstms";
+			$_dbName = <DBNAME>;
 			$_connFailed = "Database connection failed.";
 			$_dbConnFailed = "Database selection failed.";
 			$con = mysqli_connect($_dbHost, $_dbUser, $_dbPass);
@@ -23,7 +23,7 @@
 		$_dbHost = "localhost";
 		$_dbUser = "root";
 		$_dbPass = "";
-		$_dbName = "greycellstms";
+		$_dbName = <DBNAME>;
 		$con = mysqli_connect($_dbHost, $_dbUser, $_dbPass);
 		$str = @trim($str);
 		if(get_magic_quotes_gpc()) {
