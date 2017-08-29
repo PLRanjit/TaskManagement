@@ -1,9 +1,9 @@
 <?php
 
 			$_dbHost = "localhost";
-			$_dbUser = "id1373854_greyroot";
-			$_dbPass = "GreyRootAdmin";
-			$_dbName = "id1373854_greycells";
+			$_dbUser = "root";
+			$_dbPass = "";
+			$_dbName = <DBname>;
 			$_connFailed = "Database connection failed.";
 			$_dbConnFailed = "Database selection failed.";
 			$con = mysqli_connect($_dbHost, $_dbUser, $_dbPass);
@@ -20,10 +20,10 @@
 	
 	//Function to sanitize values received from the form. Prevents SQL injection
 	function clean($str) {
-		$_dbHost = "localhost";
-		$_dbUser = "id1373854_greyroot";
-		$_dbPass = "GreyRootAdmin";
-		$_dbName = "id1373854_greycells";
+			$_dbHost = "localhost";
+			$_dbUser = "root";
+			$_dbPass = "";
+			$_dbName = <DBname>;
 		$con = mysqli_connect($_dbHost, $_dbUser, $_dbPass);
 		$str = @trim($str);
 		if(get_magic_quotes_gpc()) {
